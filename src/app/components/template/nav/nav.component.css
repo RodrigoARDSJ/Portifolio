@@ -1,0 +1,62 @@
+.container {
+  height: 90%;
+  width: 100%;
+}
+
+.sidenav {
+  margin: 0.5%;
+  width: 200px;
+  border-right: none;
+  background: #002b5c;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5%;
+}
+
+.content {
+  height: 98%;
+  margin: .5%;
+  margin-left: 1.5%;
+  position: initial;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.menu-button, a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: .7rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-button:disabled {
+  color: #fff;
+}
+
+mat-icon {
+  margin-right: 8px;
+}
+
+.avatar {
+  border-radius: 70px;
+}
+
+.nome {
+  margin: 0;
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.cargo {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: #d3d3d3;
+}
+
+.divider {
+  background: #d3d3d3;
+}

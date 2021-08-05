@@ -1,0 +1,67 @@
+<button
+  class="botaomenu"
+  mat-icon-button
+  *ngIf="sidenav.mode === 'over'"
+  (click)="sidenav.toggle()"
+  hidden
+  color="primary"
+>
+  <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+  <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+</button>
+<mat-sidenav-container class="container">
+  <mat-sidenav class="sidenav" #sidenav="matSidenav">
+    <img
+      class="avatar mat-elevation-z8"
+      src="/assets/perfil.png"
+      alt="Foto de perfil"
+    />
+    <h4 class="nome">Rodrigo Alexander</h4>
+    <p class="cargo">Desenvolvedor FullStack Java</p>
+    <mat-divider class="divider"> </mat-divider>
+    <a routerLink="">
+      <button mat-button class="menu-button">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+    </a>
+
+    <a routerLink="/curriculo">
+      <button mat-button class="menu-button">
+        <mat-icon>person</mat-icon>
+        <span>Curriculo</span>
+      </button>
+    </a>
+
+    <mat-divider class="divider"> </mat-divider>
+    <button mat-button class="menu-button" disabled>
+      <mat-icon>call</mat-icon>
+      <span>(11)96608-5367</span>
+    </button>
+
+    <a href="mailto:rodrigoalere@gmail.com">
+      <button mat-button class="menu-button">
+        <mat-icon>email</mat-icon>
+        <span>rodrigoalere@gmail.com</span>
+      </button>
+    </a>
+
+    <a href="https://www.linkedin.com/in/rodrigo-alexander/">
+      <button mat-button class="menu-button">
+        <mat-icon svgIcon="linkedin" aria-hidden="true"></mat-icon>
+        <span>Rodrigo Alexander</span>
+      </button>
+    </a>
+
+    <a href="https://github.com/RodrigoARDSJ">
+      <button mat-button class="menu-button">
+        <mat-icon svgIcon="github" aria-hidden="true"></mat-icon>
+        <span>RodrigoARDSJ</span>
+      </button>
+    </a>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

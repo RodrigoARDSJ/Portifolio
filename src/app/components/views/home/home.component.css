@@ -1,0 +1,21 @@
+.card {
+    height: 94.5%;
+    margin: .5%;
+    margin-left: 1.5%;
+    position: initial;
+    justify-content: left;
+    border-radius: 10px;
+  }
+
+.title {
+    text-align: center;
+    margin: 1%;
+}
+
+.content {
+    margin-top: 2%;
+    font-size: 1rem;
+    text-decoration: #0000;
+}
+
+  
