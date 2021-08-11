@@ -1,0 +1,43 @@
+.card {
+  height: 94.5%;
+  margin: 0.5%;
+  margin-left: 1.5%;
+  position: initial;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  margin: 1%;
+}
+
+.content {
+  margin-top: 2%;
+  font-size: 1rem;
+  text-decoration: #0000;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+p {
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .botao {
+    text-align: center;
+    margin: 6% auto 6% auto;
+  }
+
+  p {
+    justify-content: center;
+  }
+
+  h1 {
+    margin-top: 6%;
+  }
+}

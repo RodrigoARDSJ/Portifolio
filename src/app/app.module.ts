@@ -16,6 +16,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { CurriculoComponent } from './components/views/curriculo/curriculo.component';
+import { ProjetosComponent } from './components/views/projetos/projetos.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CurriculoComponent } from './components/views/curriculo/curriculo.compo
     NavComponent,
     HomeComponent,
     CurriculoComponent,
+    ProjetosComponent,
   ],
   imports: [
     BrowserModule,
